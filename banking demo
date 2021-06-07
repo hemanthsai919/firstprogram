@@ -1,0 +1,66 @@
+package com.cg.demo.abs;
+
+//interface Int1 {
+//	
+//}
+//
+//interface Int2 {
+//	
+//}
+//
+//class Class3 {
+//	
+//}
+//
+//class Class4 extends Class3 implements Int1, Int2 {
+//	
+//}
+
+interface CentralGovtRules {
+	public abstract void payInterest();
+}
+
+interface StateGovtRules {
+	public abstract void giveLoan();
+}
+
+abstract class RBI { //abstract method
+	
+	public abstract void doKyc();  //what? How? No
+	
+	public void openAccount() {
+		System.out.println("Open Account...");
+	}
+	}
+
+class HDFC extends RBI implements CentralGovtRules, StateGovtRules { // concrete methods
+	public void doKyc() { // what? - yes how? - yes, concrete method
+		System.out.println("Aadaar");
+	}
+
+    public void giveLoan() {
+	System.out.println("HDFC is givivng loan");
+	
+	}
+
+    public void payInterest() {
+	System.out.println("HDFC is paying interest");
+	
+}
+
+}
+//class ICICI extends RBI  {
+//	
+//
+//}
+
+public class BankingDemo {
+	public static void main(String[] args) {
+		HDFC hdfc = new HDFC();
+		hdfc.doKyc();
+		hdfc.giveLoan();
+		hdfc.payInterest();
+	}
+
+}	
+
