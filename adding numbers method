@@ -1,0 +1,29 @@
+package com.cg.demo.oop;
+
+public class MethodDemoJava {
+	
+	static void someMethodName() {
+		System.out.println("some output");
+	}
+	
+	static void addTwoNumbers(int num1, int num2) {
+		System.out.println(num1 + num2);
+	}
+	
+	
+      public static void main(String[] args) {
+		
+		System.out.println("start");
+		
+		someMethodName();
+		
+		addTwoNumbers(10,29); // arguments (values)
+		addTwoNumbers(45,78); 
+		addTwoNumbers(90,90);
+		//addTwoNumbers(90.8,90.9);
+	
+	}
+	
+	
+	
+}
