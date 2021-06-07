@@ -1,0 +1,28 @@
+package com.cg.demo;
+import java.util.Scanner ;
+public class Lab13 {
+public static void main(String[] args) {
+	int number;
+	boolean flag = false;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter a Number : ");
+	number = sc.nextInt();
+	int cur_num = number % 10;
+	number = number/10;
+	while(number>0) {
+		if(cur_num <= number%10) {
+			flag = true;
+			break;
+		}
+		cur_num = number % 10;
+		number = number/10;
+	}
+	if(flag) {
+		System.out.println("False");
+	}
+		else {
+			System.out.println("True");
+		}
+	
+}
+}
