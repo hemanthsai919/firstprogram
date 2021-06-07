@@ -1,0 +1,25 @@
+package com.cg.demo.oop;
+
+
+class Employee {
+	
+	//attributes fields(realworldentities)
+	int id;
+	String name;
+	double salary;
+	
+	//method- functionalities
+	void work() {
+		System.out.println("Employee Works....");
+	}
+}
+public class App {
+     public static void main(String[] args) {
+		Employee obj = new Employee();
+		obj.id = 203;
+		obj.name  ="sonu";
+		obj.salary  = 10.5;
+		System.out.println(obj.id + " " +obj.name + " " + obj.salary);
+		obj.work();
+	} 
+}
