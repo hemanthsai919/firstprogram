@@ -1,0 +1,19 @@
+package com.cg.demo.encap;
+//Encapsulation - building data and code together
+//make fields private and
+//create public getters and sitters
+
+public class Demo {
+
+	private int num;
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+	
+
+}
