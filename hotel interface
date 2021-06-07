@@ -1,0 +1,44 @@
+package com.cg.demo.abs;
+
+interface MunicipalRules {
+	public abstract void keepClean();
+}
+
+interface CorporationRules {
+	public abstract void SafetyFirst();
+}
+
+interface DistrictRules {
+	public abstract void EqualTreatment();
+}
+
+abstract class JUIO {
+	public abstract void key();
+}
+class ANANDAINN extends JUIO implements MunicipalRules, CorporationRules, DistrictRules{
+	public void key() {
+		System.out.println("Have your key with you");
+	}
+	public void keepClean() {
+		System.out.println("Clean your sorroundings");
+	}
+	
+	public void SafetyFirst() {
+		System.out.println("Safety is first priority");
+	}
+	
+	public void EqualTreatment() {
+		System.out.println("Everyone should be treated equally");
+	}
+}
+public class HotelDemo {
+	public static void main(String[] args) {
+		ANANDAINN ain = new ANANDAINN();
+		ain.key();
+		ain.keepClean();
+		ain.SafetyFirst();
+		ain.EqualTreatment();
+	}
+
+	
+}
