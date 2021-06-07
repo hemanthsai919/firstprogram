@@ -1,0 +1,15 @@
+package com.cg.demo;
+
+public class App2 {
+
+	public static void main(String[] args) {
+		
+		int    num   =  10;
+// keyword identifier operator literals separator
+// (datatype) (vaeiable) (assignment) (value) (semicolon)
+		System.out.println(num);
+	}
+	
+	
+	
+}
