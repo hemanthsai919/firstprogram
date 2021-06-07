@@ -1,0 +1,26 @@
+package com.cg.demo.encap;
+
+public class EncapDemo {
+	public static void main(String[] args) {
+		BankCustomer obj = new BankCustomer();
+//		
+//		System.out.println(obj.balance);
+		
+//		obj.balance = 10000;
+		
+//		System.out.println(obj.checkBalance());
+//		obj.deposit(15000);
+//		System.out.println(obj.checkBalance());
+//		obj.withdraw(2000);
+//		System.out.println(obj.checkBalance());
+		
+		Demo demo = new Demo();
+		System.out.println(demo.getNum());
+		demo.setNum(10);
+		System.out.println(demo.getNum());
+		demo.setNum(1000);
+		System.out.println(demo.getNum());
+	}
+     
+
+}
